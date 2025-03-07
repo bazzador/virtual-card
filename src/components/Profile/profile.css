@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
+
+.profile {
+    user-select: text;
+    top: 0;
+    left: 0;
+    background-color: greenyellow;
+    width: 550px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile::after {
+    content: "Латиш Іван Михайлович";
+    position: absolute;
+    top: 230px;
+    left: 10px;
+    width: 380px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.profile::before {
+    content: "🔹 СТУДЕНТ 3-ГО КУРСУ\A"
+        "🏫 Факультет Обчислювальної Техніки, Інтелектуальних та Управляючих Систем, спеціальність 122 Комп'ютерні науки\A\A"
+        "✨ КРЕДО\A"
+        "\"Audentes Fortuna Iuvat\" — Доля прихильна до сміливих.\A\A"
+        "💡 ІНТЕРЕСИ\A"
+        "💻 Веб-програмування, 🎮 ігрові проєкти, 🧠 нові технології\A\A"
+        "📞 КОНТАКТИ\A"
+        "📧 Email: vana95530@gmail.com\A"
+        "💬 Telegram: @bazzador";
+    white-space: pre-line;
+    position: absolute;
+    top: 325px;
+    left: 25px;
+    width: 350px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}

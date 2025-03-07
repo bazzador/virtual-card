@@ -1,0 +1,59 @@
+.contact__me__flip__card {
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    transform-style: preserve-3d;
+    bottom: 40px;
+    left: 800px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.contact__me__flip__card .flip__card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1.5s ease-in-out;
+    transform: perspective(700px) rotateY(0deg);
+    text-align: center;
+}
+
+.contact__me__flip__card .flip__card.front {
+    background-color: yellow;
+}
+
+.contact__me__flip__card.flipped .flip__card.front {
+    transform: perspective(700px) rotateY(180deg);
+}
+
+.contact__me__flip__card .flip__card.back {
+    background-color: lightskyblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transform: perspective(700px) rotateY(180deg);
+}
+
+.contact__me__flip__card.flipped .flip__card.back {
+    transform: perspective(700px) rotateY(360deg);
+}
+
+.contact__me__flip__card .flip__card h1 {
+    font-size: 2em;
+    transform: perspective(700px) translateZ(50px);
+}
+
+.flip__card.back ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;    
+}

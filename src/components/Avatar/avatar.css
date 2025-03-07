@@ -1,0 +1,13 @@
+.avatar {
+    width: 325px;
+    height: 325px;
+    background-color: red;
+    border-radius: 50%;
+    position:absolute;
+    left: 375px;
+    background-image: url('../../Images/bg.png');
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+    border: 3px solid #000;
+}
